@@ -1,10 +1,13 @@
 #include <iostream>
 using namespace std;
-int main()
-{
-    int r, area;
-    cout << "Enter radius of the fountain";
-    cin >> r;
-    cout << "radius is:" << r << "area is:" << (3.14 * r * r);
+
+int main() {
+
+    double c,f;
+    cout<<"Enter celcius value:";
+    cin>>c;
+    f=(c*1.8)+32;
+    cout<<"the faranite value is:"<<f<<endl;
+
     return 0;
 }

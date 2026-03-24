@@ -3,9 +3,6 @@ using namespace std;
 
 int main() {
 
-    int a=10;
-    string name;
-    cout<<"|n Enter a & name: "
     
     return 0;
 }

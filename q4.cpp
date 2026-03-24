@@ -1,25 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int f, c, r;
+int main() {
 
-    cout << "Enter 0 for F to C, 1 for C to F: ";
-    cin >> r;
-
-    if (r == 0)
-    {
-        cout << "Enter degree in Fahrenheit: ";
-        cin >> f;
-        cout << "Degree in centigrade = " << (f - 32) * 5.0 / 9;
-    }
-    else if (r == 1)
-    {
-        cout << "Enter degree in Centigrade: ";
-        cin >> c;
-        cout << "Degree in fahrenheit = " << (c * 9.0 / 5) + 32;
-    }
-
+    int it,q;
+    double ut,dis,tm,bl;
+    cout<<"Enter item number:";
+    cin>>it;
+    cout<<"Enter quantity:";
+    cin>>q;
+    cout<<"enter unit price:";
+    cin>>ut;
+    tm =q*ut;
+    dis=tm*0.2;
+    bl=tm-dis;
+    cout<<"total amount="<<tm<<endl;
+    cout<<"discount="<<dis<<endl;
+    cout<<"bill="<<bl<<endl;
     return 0;
 }

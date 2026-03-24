@@ -1,48 +1,49 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    int ch, s, a, m, d, n1, n2;
-
-    do
-    {
-        cout << "Enter 2 numbers to be used for basic arithmetic operations: ";
-        cin >> n1 >> n2;
-
-        cout << "ENter choice \n1) SUBTRACT\n2) ADD\n3) MULTIPLY\n4) DIVISION\n5) EXIT\n";
-        cin >> ch;
-
-        if (ch == 1)
-        {
-            if (n2 > n1)
-            {
-                s = n2 - n1;
-                cout << "Subtraction = " << s;
-            }
-            else if (n1 > n2)
-            {
-                s = n1 - n2;
-                cout << "Subtraction = " << s;
-            }
-        }
-        if (ch == 2)
-        {
-            a = n1 + n2;
-            cout << "Addition = " << a;
-        }
-        if (ch == 3)
-        {
-            m = n1 * n2;
-            cout << "Multiplication = " << m;
-        }
-        if (ch == 4)
-        {
-            d = n1 / n2;
-            cout << "Division = " << d;
-        }
-
-    } while (ch != 5);
-
+int main() {
+int ch;
+    double num1,num2,result;
+    cout<<"1 Addition\n";
+    cout<<"2 Subtraction\n";
+    cout<<"3 Multiply\n";
+    cout<<"4 Devision\n";
+    cout<<"5 Exit\n";
+    cout<<"Enter number 1";
+    cin>>num1;
+    cout<<"Enter number 2";
+    cin>>num2;
+    cout<<"Enter your choice\n";
+    cin>>ch;
+    
+    
+    switch(ch){
+    case 1:
+    result=num1+num2;
+cout<<"Result:"<<result<<endl;
+break;
+case 2:
+result=num1-num2;
+cout<<"Result:"<<result<<endl;
+break;
+case 3:
+result=num1*num2;
+cout<<"Result"<<result<<endl;
+break;
+case 4:
+if(num2==0){
+    cout<<"not defined";
+}
+else{
+result= (num1/num2);
+cout<<"Result:"<<result<<endl;}
+break;
+case 5:
+cout<<"Exiting the program,Goodbye!";
+break;
+default:
+cout<<"invalid choice";
+    }
+    
     return 0;
 }

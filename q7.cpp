@@ -1,21 +1,23 @@
-/*A game compares three players' scores to find who is ahead. Implement a solution to accept three scores
-and identify the winner.*/
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main()
-{
-    int s1 , s2 , s3;
-    cout<<"Enter score 1";
-    cin>>s1;
-    cout << "Enter score 2";
-    cin >> s2;
-    cout << "Enter score 3";
-    cin >> s3;
-    if(s1>s3&&s1>s2)
-        cout<<"1st player is the winner"<<s1;
-    else if(s2 > s1 && s2 > s3)
-        cout << "2nd player is the winner" << s2;
-    else if(s3 > s2 && s3 > s2)
-        cout << "3rd player is the winner" << s3;
+
+int main() {
+
+    int p1,p2,p3;
+    cout<<"Score of player 1:";
+    cin>>p1;
+    cout<<"Score of player 2:";
+    cin>>p2;
+    cout<<"Score of player 3:";
+    cin>>p3;
+    if(p1>p2&&p1>p3){
+        cout<<"player 1 is winner with score:"<<p1<<endl;
+    }
+    if(p2>p1&&p2>p3){
+        cout<<"player 2 is the winner with score:"<<p2<<endl;
+    }
+    if(p3>p1&&p3>p2){
+        cout<<"player 3 is the winner with score:"<<p3<<endl;
+    }
     return 0;
 }

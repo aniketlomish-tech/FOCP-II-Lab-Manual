@@ -1,12 +1,19 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main()
-{
-    int a1,a2;
-    cout << "Enter a1 amount";
-    cin >> a1;
-    cout << "\nEnter a2 amount ";
-    cin >> a2;
-    cout << "\na1 amount:" << a1 << "\na2 amount" << a2 << "\ntotal amount="<<a1+a2;
+
+int main() {
+
+    int st1,st2,st3;
+    float av;
+    cout<<"Enter student 1 marks:";
+    cin>>st1;
+     cout<<"Enter student 2 marks:";
+    cin>>st2;
+     cout<<"Enter student 3 marks:";
+    cin>>st3;
+    av=(st1+st2+st3)/3.0;
+    cout<<"Averge is "<<av<<endl;
+    
+   
     return 0;
 }
